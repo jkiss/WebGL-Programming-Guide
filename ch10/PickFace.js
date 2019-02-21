@@ -160,7 +160,7 @@ function initVertexBuffers(gl) {
   gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, indexBuffer);
   gl.bufferData(gl.ELEMENT_ARRAY_BUFFER, indices, gl.STATIC_DRAW);
 
-  return indices.length;
+  return indices.length; // n == indices.length  the number of vertex
 }
 
 function checkFace(gl, n, x, y, currentAngle, u_PickedFace, viewProjMatrix, u_MvpMatrix) {
